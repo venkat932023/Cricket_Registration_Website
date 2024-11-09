@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STADIUM AVAILABLE</title>
+    <style>
+        body{
+            background-image: url("webpage.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .menu-item{
+            transition: transfoem 0.9s;
+        }
+        .menu-item:hover{
+            transform: scale(1.05);
+        }
+        h1{
+            background-color: rgb(255, 255, 255);
+            
+        }
+        p{
+            color:red;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .column{
+            float:left;
+            width: 33.33%;
+            padding:5px;
+        }
+        .row::after{
+            content:"";
+            clear:both;
+            display: table;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+  <center><h1>TOURNAMENTS AVAILABLE IN THIS STADIUMS</h1></center>
+<li><a href="website.html">GO BACK TO HOME</a></li>
+
+    <div class="row"></div>
+    <div class="column">
+        <div class="menu-item">
+        <img src="mumbaigrd.avif" width="500px" height="250px" alt="mumbai stadium" style="width:70%">
+        <li><a href="registerpage.html">MUMBAI STADIUM</a></li>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="menu-item">
+        <img src="chennaigrd.jpg" width="500px" height="250px" alt="chennai stadium" style="width:75%">
+        <li><a href="registerpage.html">CHENNAI STADIUM</a></li>
+        </div>
+    </div>
+    <div class="column">
+        <div class="menu-item">
+         <img src="bangloregrd.jpg" width="500px" height="250px" alt="bangalore stadium" style="width:75%">
+        <li><a href="registerpage.html">BANGALORE STADIUM</a></li>
+        </div>
+    </div>
+    <div class="column">
+        <div class="menu-item">
+        <img src="hyderabadgrd.jpg" width="500px" height="250px" alt="Hyderabad stadium" style="width:70%">
+        <li><a href="registerpage.html">HYDERABAD STADIUM</a></li>
+        </div>
+   </div>
+   <div class="column">
+    <div class="menu-item">
+    <img src="vizaggrd.jpeg" width="500px" height="250px" alt="vizag stadium" style="width:75%">
+    <li><a href="registerpage.html">VIZAG STADIUM</a></li>
+    </div>
+</div>
+<div class="column">
+    <div class="menu-item">
+    <img src="delhigrd.jpg" width="500px" height="250px" alt="delhi stadium" style="width:75%">
+    <li><a href="registerpage.html">DELHI STADIUM</a></li>
+    </div>
+
+</div>
+
+
+</body>
+</html>

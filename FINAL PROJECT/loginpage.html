@@ -1,0 +1,49 @@
+<html>
+   <head>
+         <title>JavaScript functions </title>
+         <style>
+            body{
+               background-image:url(login.jpg);
+               background-repeat: no-repeat;
+               background-position: center;
+            }
+            form{
+                background-color: rgba(240,248,255,0.269); 
+                margin: 30%;
+                padding: 12%;
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top:auto;
+            }
+         </style>
+
+      </head>      
+      <script>
+ function loginValidation() {
+   var uname = document.myform.username.value;
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+      </head>
+      <body>
+          <h2>Login Page</h2>  
+<form name="myform" action="website.html" 	onsubmit="return loginValidation(this)">
+ 
+User Name : <input type="text" name="username"> <br>
+Password :  <input type="password" name="password"> <br>
+         <input type="submit" value="Submit">
+         <button type="button" class="cancelbtn">Cancel</button>
+         <input type="checkbox" checked="checked">Remember me
+       <p style="color: rgb(0, 1, 10);">  Forgot<a href="#">password?</a></p>    
+          
+        </form>
+   </body>
+</html>
